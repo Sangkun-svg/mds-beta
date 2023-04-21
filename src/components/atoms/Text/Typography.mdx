@@ -1,0 +1,72 @@
+{/* Typography.mdx */}
+import { Meta, Typeset } from "@storybook/blocks";
+
+{/* TODO : line-height & letter spacing missing in Typeset of @storybook/blocks */}
+
+<Meta title="Typography" />
+
+export const typography = {
+  type: {
+    primary: '"Pretendard", "sans-serif"',
+  },
+  weight: {
+    pretendard_regular: "400",
+    pretendard_medium: "500",
+    pretendard_bold: "700",
+  },
+  size: {
+    pretendard_50: 10,
+    pretendard_100: 12,
+    pretendard_200: 14,
+    pretendard_300: 16,
+    pretendard_400: 18,
+    pretendard_500: 20,
+    pretendard_600: 24,
+    pretendard_700: 28,
+  },
+  lineHeigth: {
+    pretendard_50: 16,
+    pretendard_100: 18,
+    pretendard_200: 21,
+    pretendard_300: 24,
+    pretendard_400: 28,
+    pretendard_500: 32,
+    pretendard_600: 36,
+    pretendard_700: 40,
+  },
+};
+
+export const SampleText = "프리텐다드 가나다라마바사 ABCDEFG";
+
+# Typography
+
+**Font:** Pretendard
+
+**Weights:** 400(pretendard_regular), 500(pretendard_medium), 700(pretendard_bold)
+
+**Letter Spacing (Fix):** -0.01em;
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.pretendard_50),
+    Number(typography.size.pretendard_100),
+    Number(typography.size.pretendard_200),
+    Number(typography.size.pretendard_300),
+    Number(typography.size.pretendard_400),
+    Number(typography.size.pretendard_500),
+    Number(typography.size.pretendard_600),
+    Number(typography.size.pretendard_700),
+  ]}
+  lineHeigth={[
+    Number(typography.lineHeigth.pretendard_50),
+    Number(typography.lineHeigth.pretendard_100),
+    Number(typography.lineHeigth.pretendard_200),
+    Number(typography.lineHeigth.pretendard_300),
+    Number(typography.lineHeigth.pretendard_400),
+    Number(typography.lineHeigth.pretendard_500),
+    Number(typography.lineHeigth.pretendard_600),
+    Number(typography.lineHeigth.pretendard_700),
+  ]}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
