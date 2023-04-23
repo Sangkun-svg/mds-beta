@@ -14,33 +14,6 @@ interface IButtonStyle {
     backgroundColor: string
 }
 
-// export const BasicButton = ({
-//     width = '100%',
-//     height = '3.25rem',
-//     margin = '1rem 0 0.5rem 0',
-//     border = '0',
-//     borderRadius = BorderRadiusEnum.WEB,
-//     isDisabled = false,
-//     backgroundColor = COLOR.BRAND_COLOR,
-//     children = 'Button',
-//     onClick: handleClick,
-// }: BasicButtonProps) => {
-//     return (
-//         <BasicButtonStyle
-//             width={width}
-//             height={height}
-//             margin={margin}
-//             border={border}
-//             borderRadius={borderRadius}
-//             disabled={isDisabled}
-//             backgroundColor={backgroundColor}
-//             onClick={handleClick}
-//         >
-//             {children}
-//         </BasicButtonStyle>
-//     );
-// };
-
 export const BasicButton = ({
     width = '100%',
     height = '3.25rem',

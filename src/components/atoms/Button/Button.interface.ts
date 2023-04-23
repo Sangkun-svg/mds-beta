@@ -4,7 +4,7 @@ export interface IButton {
     height: string
     margin: string
     border: string
-    borderRadius: BorderRadiusEnum
+    borderRadius?: BorderRadiusEnum
     isDisabled?: boolean
     backgroundColor?: string
     onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
