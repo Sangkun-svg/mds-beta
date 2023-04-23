@@ -1,11 +1,9 @@
-import React from 'react'
-import { COLOR } from '../../../constants'
+import React from 'react';
+import { COLOR } from '../../../constants';
 
 interface ButtonProps {
-    disabled: boolean
-    backgroundColor?: string
-    children: string | React.ReactNode
-    onClick?: () => void
+    backgroundColor?: string;
+    children: string | React.ReactNode;
 }
 
 /**
@@ -15,5 +13,5 @@ export const Button = ({
     backgroundColor = COLOR.BRAND_COLOR,
     children = 'Button',
 }: ButtonProps) => {
-    return <button style={{ backgroundColor }}>{children}</button>
-}
+    return <button style={{ backgroundColor }}>{children}</button>;
+};

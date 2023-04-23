@@ -56,6 +56,9 @@ interface ITextStyle {
     whiteSpace?: WhiteSpace
 }
 
+/**
+ * [투두몰]은 공통된 타입 페이스를 사용합니다. 각 OS 및 국문과 영문, 숫자, 특수문자까지 공통된 Pretendard를 사용합니다.
+ */
 export const Text = ({
     children = '프리텐다드 가나다라마바사 ABCDEFG',
     margin,
