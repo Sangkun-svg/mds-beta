@@ -10,7 +10,7 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof TextButton>
 
-export const Primary: Story = {
+export const Default: Story = {
     args: {
         children: 'Button',
     },

@@ -35,8 +35,8 @@ type WhiteSpace =
 
 interface TextProps {
     children: ReactNode
-    color: string
-    margin: string
+    color: COLOR
+    margin?: string
     fontWeight: number
     fontSize: string
     lineHeight: string
@@ -46,8 +46,8 @@ interface TextProps {
 }
 
 interface ITextStyle {
-    color: string
-    margin: string
+    color: COLOR
+    margin?: string
     fontWeight: number
     fontSize: string
     lineHeight: string
@@ -61,7 +61,7 @@ interface ITextStyle {
  */
 export const Text = ({
     children = '프리텐다드 가나다라마바사 ABCDEFG',
-    margin,
+    margin = '0',
     color = COLOR.GRAY900,
     fontSize,
     fontWeight,

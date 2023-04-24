@@ -1,7 +1,9 @@
+import React from 'react'
 import type { StoryObj } from '@storybook/react'
-
 import { BasicButton } from './BasicButton'
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
+import { Text } from '../../Text/Text'
+import { COLOR } from '../../../../constants'
+
 const meta = {
     title: 'Atoms/Button/BasicButton',
     component: BasicButton,
@@ -11,9 +13,49 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof BasicButton>
 
-// // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary: Story = {
+export const Default: Story = {
     args: {
-        children: 'Button',
+        backgroundColor: COLOR.BRAND_COLOR,
+        children: (
+            <Text
+                color={COLOR.WHITE}
+                fontWeight={700}
+                fontSize={'16px'}
+                lineHeight={'24px'}
+            >
+                확인
+            </Text>
+        ),
+    },
+}
+
+export const Default_Error: Story = {
+    args: {
+        backgroundColor: COLOR.ERROR500,
+        children: (
+            <Text
+                color={COLOR.WHITE}
+                fontWeight={700}
+                fontSize={'16px'}
+                lineHeight={'24px'}
+            >
+                취소
+            </Text>
+        ),
+    },
+}
+export const Default_Success: Story = {
+    args: {
+        backgroundColor: COLOR.SUCCESS500,
+        children: (
+            <Text
+                color={COLOR.WHITE}
+                fontWeight={700}
+                fontSize={'16px'}
+                lineHeight={'24px'}
+            >
+                확인
+            </Text>
+        ),
     },
 }
