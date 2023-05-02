@@ -12,6 +12,8 @@ parserOptions:
 plugins:
     - prettier
 rules:
+    no-unused-vars:
+        - 'off'
     quotes:
         - warn
         - double
