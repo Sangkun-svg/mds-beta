@@ -35,9 +35,3 @@ To run tests, run the following command
 ```bash
   npm run test
 ```
-
-## Authors
-
--   [@Sangkun](https://github.com/Sangkun-svg)
--   [@han](https://github.com/sehwanforeal)
--   [@Hansolbin](https://github.com/Han-solbin)
