@@ -1,8 +1,8 @@
 export enum COLOR {
     ERROR = '#E82323',
     SUCCESS = '#32CF5E',
-    BRAND_COLOR = '#43A0F5',
-    DISABLED = '#D7DDEA',
+    BRAND_COLOR = '#0060EF',
+    DISABLED = '#BDBDBD',
 
     MAIN50 = '#F8FBFF',
     MAIN100 = '#EAF3FF',

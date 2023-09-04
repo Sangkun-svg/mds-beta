@@ -8,6 +8,8 @@ extends:
 overrides: []
 parserOptions:
     ecmaVersion: latest
+    ecmaFeatures:
+        experimentalObjectRestSpread: true
     sourceType: module
 plugins:
     - prettier

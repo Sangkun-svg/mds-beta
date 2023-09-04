@@ -86,7 +86,10 @@ export const Text = ({
     )
 }
 
-const TextStyle = styled.p<ITextStyle>`
+const TextStyle = styled.a<ITextStyle>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: ${props => props.color};
     margin: ${props => props.margin};
     font-size: ${props => props.fontSize};

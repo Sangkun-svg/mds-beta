@@ -23,6 +23,11 @@ interface IIconButtonStyle {
     backgroundColor: COLOR
 }
 
+/**
+ * 예외적으로 아이콘만을 이용하여 해당 버튼의 역할을 명확하게 전달할 수 있을 경우 사용합니다.
+ * 
+ * 아이콘 버튼의 모바일 터치 영역은 최소 40px 이상 사용을 권장하며, 터치 영역의 중복은 불가합니다.
+ */
 export const IconButton = ({
     width = Size.MEDIUM,
     height = Size.MEDIUM,
