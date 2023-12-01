@@ -35,8 +35,8 @@ type WhiteSpace =
 
 interface TextProps {
     children: ReactNode
-    color: string
-    margin: string
+    color: COLOR
+    margin?: string
     fontWeight: number
     fontSize: string
     lineHeight: string
@@ -46,8 +46,8 @@ interface TextProps {
 }
 
 interface ITextStyle {
-    color: string
-    margin: string
+    color: COLOR
+    margin?: string
     fontWeight: number
     fontSize: string
     lineHeight: string
@@ -56,9 +56,12 @@ interface ITextStyle {
     whiteSpace?: WhiteSpace
 }
 
+/**
+ * [투두몰]은 공통된 타입 페이스를 사용합니다. 각 OS 및 국문과 영문, 숫자, 특수문자까지 공통된 Pretendard를 사용합니다.
+ */
 export const Text = ({
     children = '프리텐다드 가나다라마바사 ABCDEFG',
-    margin,
+    margin = '0',
     color = COLOR.GRAY900,
     fontSize,
     fontWeight,
@@ -83,7 +86,10 @@ export const Text = ({
     )
 }
 
-const TextStyle = styled.p<ITextStyle>`
+const TextStyle = styled.a<ITextStyle>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: ${props => props.color};
     margin: ${props => props.margin};
     font-size: ${props => props.fontSize};

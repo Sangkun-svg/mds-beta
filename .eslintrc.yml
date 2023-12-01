@@ -8,18 +8,20 @@ extends:
 overrides: []
 parserOptions:
     ecmaVersion: latest
+    ecmaFeatures:
+        experimentalObjectRestSpread: true
     sourceType: module
 plugins:
     - prettier
 rules:
+    no-unused-vars:
+        - 'off'
     quotes:
         - warn
         - double
     semi:
         - warn
         - always
-    no-unused-vars:
-        - error
     no-undef:
         - warn
     no-undefined:
